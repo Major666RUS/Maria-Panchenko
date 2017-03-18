@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="18px" viewBox="0 0 27 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>burger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="main-page-XS" transform="translate(-15.000000, -30.000000)" fill="#4A4A4A">
+            <g id="burger" transform="translate(15.000000, 30.000000)">
+                <path d="M1,10 L0,10 L0,8 L1,8 L26,8 L27,8 L27,10 L26,10 L1,10 Z M1,18 L0,18 L0,16 L1,16 L26,16 L27,16 L27,18 L26,18 L1,18 Z M1,2 L0,2 L0,0 L1,0 L26,0 L27,0 L27,2 L26,2 L1,2 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
