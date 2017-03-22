@@ -66,34 +66,181 @@
         margin: 20px;
     }
 }
-.language {
-    margin-left: 50px;
+@media (max-width: 575px) {
+    .navbar > .navbar-toggler {
+        margin-top: 30px;
+    }
 }
+
+@media (min-width: 992px) {
+    .language {
+        margin-left: 50px;
+    }
+}
+@media (min-width: 1200px) {
+    .language {
+        margin-left: 60px;
+    }
+}
+
+
 .navbar-nav > .language > .nav-link {
     margin-right: 0;
 }
-.banner {
-    position: relative;
-}
+
+
 h1 {
     font-family: "Gotham Pro Bold";
     text-transform: uppercase;
-    font-size: 40px;
-    letter-spacing: 1.3px;
+    line-height: 0.89;
     color: white;
 }
 h5 {
     font-family: "Gotham Pro Medium";
     text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 1.1px;
+    line-height: 0.95;
     color: white;
+    margin-bottom: 0;
 }
+.banner {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.logo > img + img {
+    margin-left: 34px;
+}
+.logo.dark {
+    display: none;
+}
+
+
+@media (min-width: 1200px) {
+    .main-photo {
+        background: url("../images/xl-main-photo.png");
+        height: 643px;
+        padding: 237px 241px;
+    }
+    .banner {
+        padding: 45px 0;
+    }
+    h1 {
+        font-size: 40px;
+        letter-spacing: 1.3px;
+        margin-bottom: 30px;
+    }
+    h5 {
+        font-size: 16px;
+        letter-spacing: 1.1px;
+    }
+    .logo {
+        margin-left: 287px;
+        margin-top: 202px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .main-photo {
+        background: url("../images/l-main-photo.png");
+        height: 544px;
+        padding: 198px 200px;
+    }
+    .banner {
+        padding: 41px 0 35px;
+    }
+    h1 {
+        font-size: 40px;
+        letter-spacing: 1.3px;
+        margin-bottom: 17px;
+    }
+
+    h5 {
+        font-size: 16px;
+        letter-spacing: 1.1px;
+    }
+    .logo {
+        margin-left: 226px;
+        margin-top: 169px;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-photo {
+        background: url("../images/m-main-photo.png");
+        height: 407px;
+        padding: 122px 110px;
+    }
+    .banner {
+        padding: 42px 0 34px;
+    }
+    h1 {
+        font-size: 35px;
+        letter-spacing: 1.2px;
+        line-height: 0.92;
+    }
+    h5 {
+        font-size: 16px;
+        letter-spacing: 1.1px;
+    }
+    .logo {
+        margin-left: 193px;
+        margin-top: 111px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-photo {
+        background: url("../images/s-main-photo.png");
+        height: 305px;
+        padding: 80px 88px;
+    }
+    .banner {
+        padding: 40px 0 31px;
+    }
+    h1 {
+        font-size: 26px;
+        letter-spacing: 0.9px;
+        margin-bottom: 15px;
+    }
+    h5 {
+        font-size: 12px;
+        letter-spacing: 0.9px;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 577px) {
+    .main-photo {
+        background: none;
+        height: 100%;
+        padding: 0 40px;
+        margin-top: -42px;
+    }
+    .banner {
+        background: none;
+        padding: 0;
+    }
+    h1 {
+        font-size: 16px;
+        line-height: 0.96;
+        letter-spacing: 0.5px;
+        margin-bottom: 5px;
+        color: #4a4a4a;
+    }
+    h5 {
+        font-size: 8px;
+        line-height: 0.9;
+        letter-spacing: 0.6px;
+        color: #4a4a4a;
+    }
+}
+
+
 h3 {
     font-family: "Gotham Pro Bold";
     text-transform: uppercase;
     text-align: center;
-    margin-top: 60px;
+    margin: 70px;
     font-size: 26px;
     letter-spacing: 0.9px;
     color: #4a4a4a;
@@ -105,8 +252,48 @@ h4 {
 }
 .office {
     position: relative;
-    margin-top: 70px;
 }
+
+@media (min-width: 1200px) {
+    .photo1 {
+        background: url("../images/xl-photo-1.png");
+        height: 508px;
+        width: 730px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .photo1 {
+        background: url("../images/l-photo-1.png");
+        height: 382px;
+        width: 530px;
+    }
+}
+
+@media (max-width: 991px) {
+    .photo1 {
+        background: url("../images/m-photo-1.png");
+        height: 277px;
+        width: 390px;
+    }
+}
+
+@media (max-width: 767px) {
+    .photo1 {
+        background: url("../images/s-photo-1.png");
+        height: 208px;
+        width: 330px;
+    }
+}
+
+@media (max-width: 575px) {
+    .photo1 {
+        background: url("../images/xs-pic-1.png");
+        height: 170px;
+        width: 290px;
+    }
+}
+
 .description {
     background-color: #f7f7f7;
     position: absolute;
@@ -126,4 +313,8 @@ h4 {
     font-size: 14px;
     background: none;
     border: solid 2px #4a4a4a;
+}
+.row.footer .navbar-nav {
+    background-color: #4a4a4a;
+
 }
