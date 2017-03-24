@@ -2,31 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af6182c8-b471-4e04-af4b-4c8770a679a5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2-copy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2-copy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2-copy@2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2-copy@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2-copy@3x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2-copy@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2@2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2@3x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/1-b-0586-f-118-ef-00-a-3-a-8492-d-8-dd-5868636-e-38-aa-8-mv-2@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/facebook-logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/instagram-logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/main-page.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/main-page.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/main-page@2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/main-page@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/main-page@3x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/main-page@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/main-photo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/main-photo@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/main-photo@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/shape.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/vk-logo-of-social-network.svg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
@@ -53,8 +28,30 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.730769">
-              <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+            <state vertical-scroll-proportion="-17.653847">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.js" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.786/bootstrap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="5.62069">
+              <caret line="1141" column="84" selection-start-line="1141" selection-start-column="74" selection-end-line="1141" selection-end-column="84" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.508/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.2181816">
+              <caret line="3913" column="7" selection-start-line="3913" selection-start-column="0" selection-end-line="3913" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -63,8 +60,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9047085">
-              <caret line="293" column="5" selection-start-line="293" selection-start-column="5" selection-end-line="293" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.55269057">
+              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -99,6 +96,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
@@ -127,6 +125,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,7 +178,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -253,10 +251,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1056" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12787056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12734865" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -290,6 +288,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="53" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -458,16 +504,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.730769">
-          <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+        <state vertical-scroll-proportion="-17.653847">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.508/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2181816">
+          <caret line="3913" column="7" selection-start-line="3913" selection-start-column="0" selection-end-line="3913" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.786/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.62069">
+          <caret line="1141" column="84" selection-start-line="1141" selection-start-column="74" selection-end-line="1141" selection-end-column="84" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9047085">
-          <caret line="293" column="5" selection-start-line="293" selection-start-column="5" selection-end-line="293" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.55269057">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
           <folding />
         </state>
       </provider>

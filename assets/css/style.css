@@ -16,6 +16,36 @@
     src: url("../fonts/Proxima Nova/Proxima Nova Regular.otf");
 }
 
+.collapse {
+    display: none;
+}
+.collapse.show {
+    display: block;
+}
+.navbar-collapse {
+    position: static;
+}
+.navbar {
+    position: static;
+}
+.collapse.show > .navbar-nav::after {
+    position: absolute;
+    content: "";
+    background-color: white;
+    z-index: 1;
+    top: 400px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.collapsing {
+    =position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.35s ease;
+    -o-transition: height 0.35s ease;
+    transition: height 0.35s ease;
+}
 
 
 .container {
@@ -23,6 +53,8 @@
     font-family: Gotham Pro Medium;
     font-size: 12px;
     outline: 1px solid red;
+    text-align: center;
+    position: relative;
 }
 .navbar {
     padding: 0;
@@ -38,7 +70,7 @@
     padding: 0;
     margin: 0 15px;
     line-height: 1;
-    display: inline-block;
+    transition: color linear 0.25s;
 }
 .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
     color: #ab742d;
@@ -105,10 +137,16 @@ h5 {
 .banner {
     background-color: rgba(0, 0, 0, 0.3);
 }
-.logo > img + img {
+.social-sharing > a {
+    text-decoration: none;
+}
+.social-sharing > a:hover {
+    text-decoration: none;
+}
+.main-photo > .social-sharing > a + a {
     margin-left: 34px;
 }
-.logo.dark {
+.social-sharing.dark {
     display: none;
 }
 
@@ -131,7 +169,7 @@ h5 {
         font-size: 16px;
         letter-spacing: 1.1px;
     }
-    .logo {
+    .main-photo > .social-sharing {
         margin-left: 287px;
         margin-top: 202px;
     }
@@ -156,7 +194,7 @@ h5 {
         font-size: 16px;
         letter-spacing: 1.1px;
     }
-    .logo {
+    .main-photo > .social-sharing {
         margin-left: 226px;
         margin-top: 169px;
     }
@@ -180,7 +218,7 @@ h5 {
         font-size: 16px;
         letter-spacing: 1.1px;
     }
-    .logo {
+    .main-photo > .social-sharing {
         margin-left: 193px;
         margin-top: 111px;
     }
@@ -204,12 +242,12 @@ h5 {
         font-size: 12px;
         letter-spacing: 0.9px;
     }
-    .logo {
+    .main-photo > .social-sharing {
         display: none;
     }
 }
 
-@media (max-width: 577px) {
+@media (max-width: 575px) {
     .main-photo {
         background: none;
         height: 100%;
@@ -239,8 +277,6 @@ h5 {
 h3 {
     font-family: "Gotham Pro Bold";
     text-transform: uppercase;
-    text-align: center;
-    margin: 70px;
     font-size: 26px;
     letter-spacing: 0.9px;
     color: #4a4a4a;
@@ -253,54 +289,14 @@ h4 {
 .office {
     position: relative;
 }
-
-@media (min-width: 1200px) {
-    .photo1 {
-        background: url("../images/xl-photo-1.png");
-        height: 508px;
-        width: 730px;
-    }
+.office > img {
+    display: none;
 }
-
-@media (max-width: 1199px) {
-    .photo1 {
-        background: url("../images/l-photo-1.png");
-        height: 382px;
-        width: 530px;
-    }
-}
-
-@media (max-width: 991px) {
-    .photo1 {
-        background: url("../images/m-photo-1.png");
-        height: 277px;
-        width: 390px;
-    }
-}
-
-@media (max-width: 767px) {
-    .photo1 {
-        background: url("../images/s-photo-1.png");
-        height: 208px;
-        width: 330px;
-    }
-}
-
-@media (max-width: 575px) {
-    .photo1 {
-        background: url("../images/xs-pic-1.png");
-        height: 170px;
-        width: 290px;
-    }
-}
-
 .description {
     background-color: #f7f7f7;
     position: absolute;
-    right: 15px;
-    top: 50%;
-    padding: 50px 72px 0 60px;
-    height: 330px;
+    right: 0;
+    overflow: hidden;
 }
 .description > p {
     font-family: "Proxima Nova Regular";
@@ -314,7 +310,169 @@ h4 {
     background: none;
     border: solid 2px #4a4a4a;
 }
-.row.footer .navbar-nav {
-    background-color: #4a4a4a;
+.container > button {
+    font-family: "Helvetica Neue";
+    margin: 120px auto;
+    padding: 15px;
+    text-align: center;
+}
 
+@media (min-width: 1200px) {
+    h3 {
+        margin: 70px;
+    }
+    .photo1 {
+        background: url("../images/xl-photo-1.png");
+        height: 508px;
+        width: 730px;
+    }
+    .photo2 {
+        background: url("../images/xl-photo-2.png");
+        height: 508px;
+        width: 730px;
+        margin-top: 100px;
+    }
+    .description {
+        padding-top: 50px;
+        padding-left: 60px;
+        height: 330px;
+        top: 228px;
+    }
+    .container > button {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 1199px) {
+    h3 {
+        margin: 60px;
+    }
+    .photo1 {
+        background: url("../images/l-photo-1.png");
+        height: 382px;
+        width: 530px;
+    }
+    .photo2 {
+        background: url("../images/l-photo-2.png");
+        height: 382px;
+        width: 530px;
+        margin-top: 80px;
+    }
+    .description {
+        padding-top: 50px;
+        padding-left: 50px;
+        height: 280px;
+        top: 132px;
+    }
+    .container > button {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    h3 {
+        margin: 50px;
+    }
+    .photo1 {
+        background: url("../images/m-photo-1.png");
+        height: 277px;
+        width: 390px;
+    }
+    .photo2 {
+        background: url("../images/m-photo-2.png");
+        height: 277px;
+        width: 390px;
+        margin-top: 76px;
+    }
+    .description {
+        padding-top: 30px;
+        padding-left: 30px;
+        height: 239px;
+        top: 73px;
+    }
+    .container > button {
+        margin-top: 95px;
+    }
+}
+
+@media (max-width: 767px) {
+    h3 {
+        font-size: 20px;
+        letter-spacing: 0.7px;
+        margin: 40px;
+    }
+    .photo1 {
+        background: url("../images/s-photo-1.png");
+        height: 208px;
+        width: 330px;
+    }
+    .photo2 {
+        background: url("../images/s-photo-2.png");
+        height: 208px;
+        width: 330px;
+        margin-top: 60px;
+    }
+    .description {
+        padding-top: 20px;
+        padding-left: 25px;
+        height: 160px;
+        top: 78px;
+    }
+    .container > button {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 575px) {
+    h3 {
+        display: none;
+    }
+    h5 {
+        margin-bottom: 34px;
+    }
+    .photo1 {
+        display: none;
+    }
+    .photo2 {
+        display: none;
+    }
+    .office > img {
+        display: block;
+    }
+    .office > img:nth-child(2) {
+        margin-top: 30px;
+    }
+    .description {
+        padding-top: 17px;
+        padding-left: 24px;
+        height: 150px;
+        position: static;
+    }
+    .container > button {
+        margin-top: 40px;
+    }
+}
+
+
+.footer {
+    background-color: #4a4a4a;
+    padding: 20px;
+    line-height: .8px;
+}
+.footer .nav {
+    padding: 0;
+}
+.footer .nav-item > .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding: 0;
+    margin: 0 15px;
+    line-height: 1;
+}
+.footer > .social-sharing {
+    margin-left: 30px;
+}
+.footer > .social-sharing > a + a {
+    margin-left: 32px;
 }
