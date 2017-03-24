@@ -28,6 +28,7 @@
 .navbar {
     position: static;
 }
+/*comment*/
 .collapse.show > .navbar-nav::after {
     position: absolute;
     content: "";
