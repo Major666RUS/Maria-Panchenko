@@ -50,7 +50,6 @@
     transition: height 0.35s ease;
 }
 
-
 .container {
     color: #4a4a4a;
     font-family: Gotham Pro Medium;
@@ -135,11 +134,9 @@
     }
 }
 
-
 .navbar-nav > .language > .nav-link {
     margin-right: 0;
 }
-
 
 h1 {
     font-family: "Gotham Pro Bold";
@@ -169,7 +166,6 @@ h5 {
 .social-sharing.dark {
     display: none;
 }
-
 
 @media (min-width: 1200px) {
     .main-photo {
@@ -292,7 +288,6 @@ h5 {
         color: #4a4a4a;
     }
 }
-
 
 h3 {
     font-family: "Gotham Pro Bold";
