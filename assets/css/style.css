@@ -36,12 +36,25 @@
     content: "";
     background-color: white;
     z-index: 1;
-    top: 400px;
+    top: 500px;
     right: 0;
     bottom: 0;
     left: 0;
 }
+.collapse.show > .navbar-nav > .language {
+    font-family: "Gotham Pro Medium";
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 15px;
+    right: 29px;
+    padding: 0;
+}
+.collapse.show > .social-sharing.dark {
+    display: block;
+}
 .collapsing {
+    =display: none;
     =position: relative;
     height: 0;
     overflow: hidden;
@@ -54,7 +67,7 @@
     color: #4a4a4a;
     font-family: Gotham Pro Medium;
     font-size: 12px;
-    outline: 1px solid red;
+    =outline: 1px solid red;
     text-align: center;
     position: relative;
 }
@@ -155,10 +168,25 @@
     border: none;
     outline: none;
 }
+.social-sharing > a {
+    text-decoration: none;
+}
+.social-sharing > a:hover {
+    text-decoration: none;
+}
+.social-sharing > a + a {
+    margin-left: 34px;
+}
+.social-sharing.dark {
+    display: none;
+}
+.social-sharing.dark > a:first-child {
+    margin-left: 50%;
+}
 
 @media (min-width: 1200px) {
     .language {
-        margin-left: 55px;
+        margin-left: 202px;
     }
     .navbar-nav {
         margin-left: 231px;
@@ -167,16 +195,16 @@
 
 @media (max-width: 1199px) {
     .language {
-        margin-left: 50px;
+        margin-left: 105px;
     }
     .navbar-nav {
-        margin-left: 145px;
+        margin-left: 148px;
     }
 }
 
 @media (max-width: 991px) {
     .language {
-        margin-left: 16px;
+        margin-left: 26px;
     }
     .navbar-nav {
         margin-left: -15px;
@@ -206,7 +234,6 @@
 .navbar-nav > .language > .nav-link {
     margin-right: 0;
 }
-
 h1 {
     font-family: "Gotham Pro Bold";
     text-transform: uppercase;
@@ -222,18 +249,6 @@ h5 {
 }
 .banner {
     background-color: rgba(0, 0, 0, 0.3);
-}
-.social-sharing > a {
-    text-decoration: none;
-}
-.social-sharing > a:hover {
-    text-decoration: none;
-}
-.main-photo > .social-sharing > a + a {
-    margin-left: 34px;
-}
-.social-sharing.dark {
-    display: none;
 }
 
 @media (min-width: 1200px) {
