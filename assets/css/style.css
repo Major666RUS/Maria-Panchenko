@@ -31,7 +31,10 @@
 .navbar {
     position: static;
 }
-.collapse.show > .navbar-nav::after {
+
+
+
+=.collapse.show > .navbar-nav::after {
     position: absolute;
     content: "";
     background-color: white;
@@ -41,7 +44,7 @@
     bottom: 0;
     left: 0;
 }
-.collapse.show > .navbar-nav > .language {
+=.menu.open > .language {
     font-family: "Gotham Pro Medium";
     font-size: 12px;
     letter-spacing: 1px;
@@ -50,32 +53,34 @@
     right: 29px;
     padding: 0;
 }
-.collapse.show > .social-sharing.dark {
-    display: block;
-}
-.collapsing {
-    =display: none;
-    =position: relative;
-    height: 0;
-    overflow: hidden;
-    -webkit-transition: height 0.35s ease;
-    -o-transition: height 0.35s ease;
-    transition: height 0.35s ease;
-}
+
+
+
 .container {
     color: #4a4a4a;
     font-family: Gotham Pro Medium;
     font-size: 12px;
     text-align: center;
     position: relative;
+    outline: 1px solid green;
 }
+
 .navbar {
     padding: 0;
 }
-.navbar-nav {
-    margin: 40px auto;
+
+.burger-line {
+    position: fixed;
+    background-color: white;
+    z-index: 15;
+    width: 100%;
 }
+
 .burger {
+    display: none;
+    background: none;
+    padding: 0;
+    border: none;
     width: 27px;
     height: 18px;
     position: relative;
@@ -89,6 +94,11 @@
     transition: .5s ease-in-out;
     cursor: pointer;
 }
+
+.burger:focus {
+    outline: none;
+}
+
 .burger > span {
     display: block;
     position: absolute;
@@ -107,6 +117,7 @@
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
+
 .burger span:nth-child(1) {
     top: 0px;
 }
@@ -145,6 +156,19 @@
     left: 50%;
 }
 
+.menu {
+    text-align: left;
+}
+
+.navbar-nav {
+    margin: 40px 0;
+    display: block;
+}
+
+.navbar-nav > .nav-item {
+    display: inline-block;
+}
+
 .navbar-nav > .nav-item > .nav-link {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -152,39 +176,39 @@
     padding: 0 2px;
     line-height: 1;
     margin: 0 15px;
-    transition: color linear 0.25s;
 }
+
 .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
     color: #ab742d;
 }
+
 .navbar-nav > .active > .nav-link {
     color: #ab742d;
 }
-.navbar > .navbar-toggler {
-    padding: 0;
-    margin: 25px 0;
-    border: none;
-    outline: none;
+
+.navbar-nav > .language > .nav-link {
+    margin-right: 0;
 }
+
 .social-sharing > a {
     text-decoration: none;
 }
+
 .social-sharing > a:hover {
     text-decoration: none;
 }
+
 .social-sharing > a + a {
     margin-left: 34px;
 }
+
 .social-sharing.dark {
     display: none;
-}
-.social-sharing.dark > a:first-child {
-    margin-left: 50%;
 }
 
 @media (min-width: 1200px) {
     .language {
-        margin-left: 202px;
+        margin-left: 180px;
     }
     .navbar-nav {
         margin-left: 231px;
@@ -193,7 +217,7 @@
 
 @media (max-width: 1199px) {
     .language {
-        margin-left: 105px;
+        margin-left: 83px;
     }
     .navbar-nav {
         margin-left: 148px;
@@ -202,7 +226,7 @@
 
 @media (max-width: 991px) {
     .language {
-        margin-left: 26px;
+        margin-left: 6px;
     }
     .navbar-nav {
         margin-left: -15px;
@@ -210,28 +234,115 @@
 }
 
 @media (max-width: 767px) {
+    .burger {
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 43px;
+    }
+
+    .menu {
+        =display: none;
+        text-align: center;
+        z-index: 20;
+    }
+
+
+    .menu {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        -visibility: hidden;
+        transition: opacity .35s .35s;
+        z-index: 20;
+    }
+
+    .menu.open {
+        opacity: 1;
+        =position: relative;
+    }
+
+    .container:before {
+         content: '';
+         background: white;
+         left: -55%;
+         top: 0;
+         width: 50%;
+         height: 100%;
+         position: absolute;
+         transition: left .35s ease;
+         z-index: 10;
+     }
+
+    .container:after {
+         content: '';
+         background: white;
+         right: -55%;
+         top: 0;
+         width: 50%;
+         height: 100%;
+         position: absolute;
+         transition: right .35s ease;
+         z-index: 10;
+    }
+
+    .container.open:before {
+        left: 0;
+    }
+
+    .container.open:after {
+        right: 0;
+    }
+
+    .menu .nav-link {
+        animation: fadeInRight .5s ease forwards;
+        animation-delay: 1.35s;
+    }
+
+
+
+
+    @keyframes fadeInRight {
+        0% {
+        }
+        100% {
+        }
+    }
+
+
+
     .navbar-nav {
-        float: none;
         font-family: Gotham Pro Bold;
         font-size: 16px;
         letter-spacing: 0.5px;
         text-align: center;
         margin: 0;
     }
+    .navbar-nav > .nav-item {
+        display: block;
+        margin-bottom: 40px;
+    }
     .navbar-nav > .nav-item > .nav-link {
         line-height: 1;
-        margin: 20px;
+        margin: 0;
+    }
+    .social-sharing.dark {
+        display: inline;
     }
 }
 @media (max-width: 575px) {
-    .navbar > .navbar-toggler {
+    .burger {
         margin-top: 30px;
+    }
+    .menu {
+        top: 98px;
+    }
+    .navbar-nav > .nav-item {
+        margin-top: 35px;
     }
 }
 
-.navbar-nav > .language > .nav-link {
-    margin-right: 0;
-}
 h1 {
     font-family: "Gotham Pro Bold";
     text-transform: uppercase;
@@ -327,6 +438,7 @@ h5 {
         background: url("../images/s-main-photo.png");
         height: 305px;
         padding: 80px 88px;
+        margin-top: 86px;
     }
     .banner {
         padding: 40px 0 31px;
@@ -348,9 +460,11 @@ h5 {
 @media (max-width: 575px) {
     .main-photo {
         background: none;
-        height: 100%;
+        width: 100%;
         padding: 0 40px;
-        margin-top: -42px;
+        margin-top: 31px;
+        position: relative;
+        z-index: 30;
     }
     .banner {
         background: none;
@@ -368,6 +482,7 @@ h5 {
         line-height: 0.9;
         letter-spacing: 0.6px;
         color: #4a4a4a;
+        margin-bottom: 4px;
     }
 }
 
@@ -601,9 +716,6 @@ h4 {
         font-size: 14px;
         margin-bottom: 5px;
     }
-    h5 {
-        margin-bottom: 34px;
-    }
     .photo1 {
         display: none;
     }
@@ -613,8 +725,8 @@ h4 {
     .office > img {
         display: block;
     }
-    .office > img:nth-child(2) {
-        margin-top: 30px;
+    =.container > img:first-child {
+        margin-top: 92px;
     }
     .description {
         padding: 17px 15px 20px 24px;
