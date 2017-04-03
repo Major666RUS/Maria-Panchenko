@@ -63,6 +63,7 @@
     text-align: center;
     position: relative;
     outline: 1px solid green;
+    overflow: hidden;
 }
 
 .navbar {
@@ -73,7 +74,7 @@
     position: fixed;
     background-color: white;
     z-index: 15;
-    width: 100%;
+    width: 510px;
 }
 
 .burger {
@@ -460,16 +461,25 @@ h5 {
 @media (max-width: 575px) {
     .main-photo {
         background: none;
-        width: 100%;
-        padding: 0 40px;
-        margin-top: 31px;
-        position: relative;
+        padding: 0;
+        margin-top: 0;
+        height: 50px;
+        position: fixed;
+        top: 31px;
+        left: 50%;
+        margin-left: -87.5px;
         z-index: 30;
     }
+
+    .main-photo.close {
+        display: none;
+    }
+
     .banner {
         background: none;
         padding: 0;
     }
+
     h1 {
         font-size: 16px;
         line-height: 0.96;
@@ -477,6 +487,7 @@ h5 {
         margin-bottom: 5px;
         color: #4a4a4a;
     }
+
     h5 {
         font-size: 8px;
         line-height: 0.9;
@@ -499,6 +510,11 @@ h4 {
     margin-bottom: 20px;
     color: #4a4a4a;
 }
+
+h3 + div {
+    margin-top: 91px;
+}
+
 .office {
     position: relative;
 }
