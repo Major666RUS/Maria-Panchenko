@@ -242,6 +242,7 @@ h3 + div {
     font-size: 14px;
     line-height: 1em;
     background: none;
+    border: 2px solid #4a4a4a;
     width: 165px;
     height: 40px;
 }
@@ -255,75 +256,44 @@ h3 + div {
     text-transform: uppercase;
     background: none;
     border: solid 2px #4a4a4a;
-    padding: 15px 50px;
 }
 
-.btn-1 {
-    border: none;
-    position: relative;
-}
-
-.btn-1 svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-
-.btn-1 rect {
-    fill: none;
-    stroke: #4a4a4a;
-    stroke-width: 1;
-    stroke-dasharray: 422, 0;
-}
-
-.btn-1:hover {
-    background: rgba(225, 51, 45, 0);
-    letter-spacing: 1px;
-}
-
-.btn-1:hover rect {
-    stroke-width: 5;
-    stroke-dasharray: 15, 310;
-    stroke-dashoffset: 44;
-    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.btn-2,
-.btn-2::after {
+.button,
+.button::after {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
-.btn-2 {
-    border: 1px solid #4a4a4a;
+.button {
     z-index: 0;
+    border-radius: 0;
     position: relative;
 }
 
-.btn-2::before,
-.btn-2::after {
+
+
+.button::before,
+.button::after {
     background: #4a4a4a;
     content: '';
     position: absolute;
     z-index: -1;
 }
 
-.btn-2:hover {
+.button:hover {
     color: #fff;
 }
 
-.btn-2::after {
+.button::after {
     height: 100%;
     left: 0;
     top: 0;
     width: 0;
 }
 
-.btn-2:hover:after {
+.button:hover:after {
     width: 100%;
 }
 
@@ -417,14 +387,10 @@ h3 + div {
         width: 165px;
         height: 40px;
     }
-    .btn-1 svg {
-        height: 40px;
-    }
-    .btn-1:hover rect {
-        stroke-dashoffset: 44;
-    }
     .container > button {
         margin: 120px 350px 70px 410px;
+        width: 350px;
+        height: 50px;
     }
     .footer > .social-sharing {
         margin-left: 15px;
@@ -485,14 +451,10 @@ h3 + div {
         width: 165px;
         height: 35px;
     }
-    .btn-1 svg {
-        height: 35px;
-    }
-    .btn-1:hover rect {
-        stroke-dashoffset: 48;
-    }
     .container > button {
         margin: 100px 273px 70px 307px;
+        width: 350px;
+        height: 50px;
     }
     .footer > .social-sharing {
         margin-left: 45px;
@@ -694,16 +656,11 @@ h3 + div {
         width: 130px;
         height: 30px;
     }
-    .btn-1 svg {
-        height: 30px;
-    }
-    .btn-1:hover rect {
-        stroke-dashoffset: 104;
-    }
     .container > button {
         font-size: 14px;
-        padding: 10px 35px;
         margin: 80px 108px 51px 112px;
+        width: 290px;
+        height: 39px;
     }
     .footer {
         display: none;
