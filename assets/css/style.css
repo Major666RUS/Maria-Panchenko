@@ -19,59 +19,26 @@
     src: url("../fonts/Proxima Nova/Proxima Nova Semibold.otf");
 }
 
-.collapse {
-    display: none;
-}
-.collapse.show {
-    display: block;
-}
-.navbar-collapse {
-    position: static;
-}
-.navbar {
-    position: static;
-}
-
-
-
-=.collapse.show > .navbar-nav::after {
-    position: absolute;
-    content: "";
-    background-color: white;
-    z-index: 1;
-    top: 500px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-=.menu.open > .language {
-    font-family: "Gotham Pro Medium";
-    font-size: 12px;
-    letter-spacing: 1px;
-    position: absolute;
-    top: 15px;
-    right: 29px;
-    padding: 0;
-}
-
-
-
 .container {
     color: #4a4a4a;
     font-family: Gotham Pro Medium;
     font-size: 12px;
     text-align: center;
     position: relative;
-    outline: 1px solid green;
     overflow: hidden;
 }
 
 .navbar {
+    position: static;
     padding: 0;
 }
 
 button {
     cursor: pointer;
+}
+
+button:focus {
+    outline: none;
 }
 
 .burger-line {
@@ -210,175 +177,13 @@ button {
     display: none;
 }
 
-@media (min-width: 1200px) {
-    .language {
-        margin-left: 180px;
-    }
-    .navbar-nav {
-        margin-left: 231px;
-    }
-}
-
-@media (max-width: 1199px) {
-    .language {
-        margin-left: 83px;
-    }
-    .navbar-nav {
-        margin-left: 148px;
-    }
-}
-
-@media (max-width: 991px) {
-    .language {
-        margin-left: 6px;
-    }
-    .navbar-nav {
-        margin-left: -15px;
-    }
-}
-
-@media (max-width: 767px) {
-    .burger {
-        display: block;
-        margin-top: 25px;
-        margin-bottom: 43px;
-    }
-
-    .menu {
-        text-align: center;
-        position: fixed;
-        top: 100px;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        visibility: hidden;
-        transition: all .35s;
-        z-index: 25;
-    }
-
-    .menu.open {
-        opacity: 1;
-        visibility: visible;
-        transition: all .35s .35s;
-    }
-
-    .container:before {
-         content: '';
-         background: white;
-         left: -55%;
-         top: 0;
-         width: 50%;
-         height: 100%;
-         position: absolute;
-         transition: left .35s .35s ease;
-         z-index: 20;
-     }
-
-    .container:after {
-         content: '';
-         background: white;
-         right: -55%;
-         top: 0;
-         width: 50%;
-         height: 100%;
-         position: absolute;
-         transition: right .35s .35s ease;
-         z-index: 20;
-    }
-
-    .container.open:before {
-        left: 0;
-        transition: left .35s ease;
-    }
-
-    .container.open:after {
-        right: 0;
-        transition: right .35s ease;
-    }
-
-    .menu .nav-link {
-        animation: fadeInRight .5s ease forwards;
-        animation-delay: 1.35s;
-    }
-
-
-
-
-    @keyframes fadeInRight {
-        0% {
-        }
-        100% {
-        }
-    }
-
-
-
-    .navbar-nav {
-        font-family: Gotham Pro Bold;
-        font-size: 16px;
-        text-align: center;
-        margin: 0;
-    }
-
-    .navbar-nav > .nav-item {
-        display: block;
-        margin-bottom: 40px;
-    }
-
-    .navbar-nav > .nav-item:nth-last-child(2) {
-        display: block;
-        margin-bottom: 60px;
-    }
-
-    .navbar-nav > .nav-item > .nav-link {
-        line-height: 1;
-        letter-spacing: 0.5px;
-        margin: 0;
-    }
-
-    .navbar-nav > .language {
-        position: fixed;
-        top: 40px;
-        margin-left: 226px;
-        width: 100%;
-        font-family: "Gotham Pro Medium";
-        font-size: 12px;
-        letter-spacing: 1px;
-    }
-
-    .social-sharing.dark {
-        display: inline;
-    }
-}
-@media (max-width: 575px) {
-    .burger-line {
-        width: 560px;
-        background: none;
-    }
-
-    .burger {
-        margin-top: 30px;
-    }
-    .menu {
-        top: 98px;
-    }
-    .navbar-nav > .nav-item {
-        margin-bottom: 35px;
-    }
-
-    .navbar-nav > .language {
-        width: 32px;
-        top: 41px;
-        right: 19px;
-    }
-}
-
 h1 {
     font-family: "Gotham Pro Bold";
     text-transform: uppercase;
     line-height: 0.89;
     color: white;
 }
+
 h5 {
     font-family: "Gotham Pro Medium";
     text-transform: uppercase;
@@ -386,140 +191,9 @@ h5 {
     color: white;
     margin-bottom: 0;
 }
+
 .banner {
     background-color: rgba(0, 0, 0, 0.3);
-}
-
-@media (min-width: 1200px) {
-    .main-photo {
-        background: url("../images/xl-main-photo.png");
-        height: 643px;
-        padding: 237px 241px;
-    }
-    .banner {
-        padding: 45px 0;
-    }
-    h1 {
-        font-size: 40px;
-        letter-spacing: 1.3px;
-        margin-bottom: 30px;
-    }
-    h5 {
-        font-size: 16px;
-        letter-spacing: 1.1px;
-    }
-    .main-photo > .social-sharing {
-        margin-left: 287px;
-        margin-top: 202px;
-    }
-}
-
-@media (max-width: 1199px) {
-    .main-photo {
-        background: url("../images/l-main-photo.png");
-        height: 544px;
-        padding: 198px 200px;
-    }
-    .banner {
-        padding: 41px 0 35px;
-    }
-    h1 {
-        font-size: 40px;
-        letter-spacing: 1.3px;
-        margin-bottom: 17px;
-    }
-
-    h5 {
-        font-size: 16px;
-        letter-spacing: 1.1px;
-    }
-    .main-photo > .social-sharing {
-        margin-left: 226px;
-        margin-top: 169px;
-    }
-}
-
-@media (max-width: 991px) {
-    .main-photo {
-        background: url("../images/m-main-photo.png");
-        height: 407px;
-        padding: 122px 110px;
-    }
-    .banner {
-        padding: 42px 0 34px;
-    }
-    h1 {
-        font-size: 35px;
-        letter-spacing: 1.2px;
-        line-height: 0.92;
-    }
-    h5 {
-        font-size: 16px;
-        letter-spacing: 1.1px;
-    }
-    .main-photo > .social-sharing {
-        margin-left: 193px;
-        margin-top: 111px;
-    }
-}
-
-@media (max-width: 767px) {
-    .main-photo {
-        background: url("../images/s-main-photo.png");
-        height: 305px;
-        padding: 80px 88px;
-        margin-top: 86px;
-    }
-    .banner {
-        padding: 40px 0 31px;
-    }
-    h1 {
-        font-size: 26px;
-        letter-spacing: 0.9px;
-        margin-bottom: 15px;
-    }
-    h5 {
-        font-size: 12px;
-        letter-spacing: 0.9px;
-    }
-    .main-photo > .social-sharing {
-        display: none;
-    }
-}
-
-@media (max-width: 575px) {
-    .main-photo {
-        background: white;
-        padding: 31px 0 0 0;
-        margin-top: 0;
-        height: 91px;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 15;
-    }
-
-    .banner {
-        background: none;
-        padding: 0;
-    }
-
-    h1 {
-        font-size: 16px;
-        line-height: 0.96;
-        letter-spacing: 0.5px;
-        margin-bottom: 5px;
-        color: #4a4a4a;
-    }
-
-    h5 {
-        font-size: 8px;
-        line-height: 0.9;
-        letter-spacing: 0.6px;
-        color: #4a4a4a;
-        margin-bottom: 4px;
-    }
 }
 
 h3 {
@@ -529,6 +203,7 @@ h3 {
     letter-spacing: 0.9px;
     color: #4a4a4a;
 }
+
 h4 {
     font-family: "Proxima Nova Bold";
     font-size: 20px;
@@ -543,29 +218,34 @@ h3 + div {
 .office {
     position: relative;
 }
+
 .office > img {
     display: none;
 }
+
 .description {
     background-color: #f7f7f7;
     position: absolute;
     right: 0;
 }
+
 .description > p {
     font-family: "Proxima Nova Regular";
     line-height: 1.3em;
     color: #4a4a4a;
     font-size: 16px;
 }
+
 .description > button {
     font-family: "Proxima Nova Semibold";
     color: #51595b;
     font-size: 14px;
     line-height: 1em;
     background: none;
-    width: 164px;
+    width: 165px;
     height: 40px;
 }
+
 .container > button {
     font-family: "Proxima Nova Semibold";
     font-size: 16px;
@@ -582,13 +262,14 @@ h3 + div {
     border: none;
     position: relative;
 }
+
 .btn-1 svg {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 40px;
 }
+
 .btn-1 rect {
     fill: none;
     stroke: #4a4a4a;
@@ -600,6 +281,7 @@ h3 + div {
     background: rgba(225, 51, 45, 0);
     letter-spacing: 1px;
 }
+
 .btn-1:hover rect {
     stroke-width: 5;
     stroke-dasharray: 15, 310;
@@ -607,7 +289,6 @@ h3 + div {
     -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
 
 .btn-2,
 .btn-2::after {
@@ -646,26 +327,25 @@ h3 + div {
     width: 100%;
 }
 
-
-
-
-
 .footer {
     background-color: #4a4a4a;
     padding: 0;
     line-height: .8px;
 }
+
 .footer > .nav {
     padding: 0;
     margin-top: 27px;
     margin-bottom: 21px;
 }
+
 .footer > .social-sharing {
     padding: 0;
     margin-top: 21px;
     margin-bottom: 19px;
     vertical-align: bottom;
 }
+
 .footer .nav-item > .nav-link {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -674,14 +354,43 @@ h3 + div {
     margin: 0 15px;
     line-height: 1;
 }
+
 .footer .nav-item > .nav-link:hover {
     color: #ab742d;
 }
+
 .footer > .social-sharing > a + a {
     margin-left: 32px;
 }
 
 @media (min-width: 1200px) {
+    .language {
+        margin-left: 180px;
+    }
+    .navbar-nav {
+        margin-left: 231px;
+    }
+    .main-photo {
+        background: url("../images/xl-main-photo.png");
+        height: 643px;
+        padding: 237px 241px;
+    }
+    .banner {
+        padding: 45px 0;
+    }
+    h1 {
+        font-size: 40px;
+        letter-spacing: 1.3px;
+        margin-bottom: 30px;
+    }
+    h5 {
+        font-size: 16px;
+        letter-spacing: 1.1px;
+    }
+    .main-photo > .social-sharing {
+        margin-left: 287px;
+        margin-top: 202px;
+    }
     h3 {
         margin: 70px;
     }
@@ -705,7 +414,14 @@ h3 + div {
         margin-bottom: 86px;
     }
     .description > button {
-
+        width: 165px;
+        height: 40px;
+    }
+    .btn-1 svg {
+        height: 40px;
+    }
+    .btn-1:hover rect {
+        stroke-dashoffset: 44;
     }
     .container > button {
         margin: 120px 350px 70px 410px;
@@ -716,6 +432,33 @@ h3 + div {
 }
 
 @media (max-width: 1199px) {
+    .language {
+        margin-left: 83px;
+    }
+    .navbar-nav {
+        margin-left: 148px;
+    }
+    .main-photo {
+        background: url("../images/l-main-photo.png");
+        height: 544px;
+        padding: 198px 200px;
+    }
+    .banner {
+        padding: 41px 0 35px;
+    }
+    h1 {
+        font-size: 40px;
+        letter-spacing: 1.3px;
+        margin-bottom: 17px;
+    }
+    h5 {
+        font-size: 16px;
+        letter-spacing: 1.1px;
+    }
+    .main-photo > .social-sharing {
+        margin-left: 226px;
+        margin-top: 169px;
+    }
     h3 {
         margin: 60px;
     }
@@ -739,7 +482,14 @@ h3 + div {
         margin-bottom: 46px;
     }
     .description > button {
-        padding: 8.5px 27px;
+        width: 165px;
+        height: 35px;
+    }
+    .btn-1 svg {
+        height: 35px;
+    }
+    .btn-1:hover rect {
+        stroke-dashoffset: 48;
     }
     .container > button {
         margin: 100px 273px 70px 307px;
@@ -750,6 +500,33 @@ h3 + div {
 }
 
 @media (max-width: 991px) {
+    .language {
+        margin-left: 6px;
+    }
+    .navbar-nav {
+        margin-left: -15px;
+    }
+    .main-photo {
+        background: url("../images/m-main-photo.png");
+        height: 407px;
+        padding: 122px 110px;
+    }
+    .banner {
+        padding: 42px 0 34px;
+    }
+    h1 {
+        font-size: 35px;
+        letter-spacing: 1.2px;
+        line-height: 0.92;
+    }
+    h5 {
+        font-size: 16px;
+        letter-spacing: 1.1px;
+    }
+    .main-photo > .social-sharing {
+        margin-left: 193px;
+        margin-top: 111px;
+    }
     h3 {
         margin: 50px;
     }
@@ -778,6 +555,109 @@ h3 + div {
 }
 
 @media (max-width: 767px) {
+    .burger {
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 43px;
+    }
+    .menu {
+        text-align: center;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .35s;
+        z-index: 25;
+    }
+    .menu.open {
+        opacity: 1;
+        visibility: visible;
+        transition: all .35s .35s;
+    }
+    .container:before {
+         content: '';
+         background: white;
+         left: -55%;
+         top: 0;
+         width: 50%;
+         height: 100%;
+         position: absolute;
+         transition: left .35s .35s ease;
+         z-index: 20;
+     }
+    .container:after {
+         content: '';
+         background: white;
+         right: -55%;
+         top: 0;
+         width: 50%;
+         height: 100%;
+         position: absolute;
+         transition: right .35s .35s ease;
+         z-index: 20;
+    }
+    .container.open:before {
+        left: 0;
+        transition: left .35s ease;
+    }
+    .container.open:after {
+        right: 0;
+        transition: right .35s ease;
+    }
+    .navbar-nav {
+        font-family: Gotham Pro Bold;
+        font-size: 16px;
+        text-align: center;
+        margin: 0;
+    }
+    .navbar-nav > .nav-item {
+        display: block;
+        margin-bottom: 40px;
+    }
+    .navbar-nav > .nav-item:nth-last-child(2) {
+        display: block;
+        margin-bottom: 60px;
+    }
+    .navbar-nav > .nav-item > .nav-link {
+        line-height: 1;
+        letter-spacing: 0.5px;
+        margin: 0;
+    }
+    .navbar-nav > .language {
+        position: fixed;
+        top: 40px;
+        margin-left: 226px;
+        width: 100%;
+        font-family: "Gotham Pro Medium";
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .social-sharing.dark {
+        display: inline;
+    }
+    .main-photo {
+        background: url("../images/s-main-photo.png");
+        height: 305px;
+        padding: 80px 88px;
+        margin-top: 86px;
+    }
+    .banner {
+        padding: 40px 0 31px;
+    }
+    h1 {
+        font-size: 26px;
+        letter-spacing: 0.9px;
+        margin-bottom: 15px;
+    }
+    h5 {
+        font-size: 12px;
+        letter-spacing: 0.9px;
+    }
+    .main-photo > .social-sharing {
+        display: none;
+    }
     h3 {
         font-size: 20px;
         letter-spacing: 0.7px;
@@ -811,7 +691,14 @@ h3 + div {
         font-family: "Proxima Nova Regular";
         font-size: 12px;
         color: #4a4a4a;
-        padding: 7px 18px;
+        width: 130px;
+        height: 30px;
+    }
+    .btn-1 svg {
+        height: 30px;
+    }
+    .btn-1:hover rect {
+        stroke-dashoffset: 104;
     }
     .container > button {
         font-size: 14px;
@@ -824,6 +711,53 @@ h3 + div {
 }
 
 @media (max-width: 575px) {
+    .burger-line {
+        width: 560px;
+        background: none;
+    }
+    .burger {
+        margin-top: 30px;
+    }
+    .menu {
+        top: 98px;
+    }
+    .navbar-nav > .nav-item {
+        margin-bottom: 35px;
+    }
+    .navbar-nav > .language {
+        width: 32px;
+        top: 41px;
+        right: 19px;
+    }
+    .main-photo {
+        background: white;
+        padding: 31px 0 0 0;
+        margin-top: 0;
+        height: 91px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 15;
+    }
+    .banner {
+        background: none;
+        padding: 0;
+    }
+    h1 {
+        font-size: 16px;
+        line-height: 0.96;
+        letter-spacing: 0.5px;
+        margin-bottom: 5px;
+        color: #4a4a4a;
+    }
+    h5 {
+        font-size: 8px;
+        line-height: 0.9;
+        letter-spacing: 0.6px;
+        color: #4a4a4a;
+        margin-bottom: 4px;
+    }
     h3 {
         display: none;
     }
@@ -840,9 +774,6 @@ h3 + div {
     .office > img {
         display: block;
     }
-    =.container > img:first-child {
-        margin-top: 92px;
-    }
     .description {
         padding: 17px 15px 20px 24px;
         height: 150px;
@@ -850,10 +781,6 @@ h3 + div {
     }
     .description > p {
         margin-bottom: 16px;
-    }
-    .description > button {
-        font-family: "Proxima Nova Regular";
-        font-size: 12px;
     }
     .container > button {
         margin: 40px 0 38px;
