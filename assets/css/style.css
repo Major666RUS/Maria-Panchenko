@@ -179,8 +179,12 @@ button:focus {
     display: none;
 }
 
-.main-photo {
+.intro {
     margin-top: 40px;
+}
+
+.intro.about {
+    display: none;
 }
 
 h1 {
@@ -217,6 +221,15 @@ h4 {
     color: #4a4a4a;
 }
 
+.about-h3-top,
+.about-h3-bottom {
+    display: block;
+}
+
+.about-photo {
+    float: right;
+}
+
 .about-text {
     font-family: "Proxima Nova Regular";
     font-size: 18px;
@@ -225,9 +238,6 @@ h4 {
     float: left;
 }
 
-.about-photo {
-    float: right;
-}
 .about-text > p + p {
     margin-top: 1.5em;
     margin-bottom: 0;
@@ -366,7 +376,7 @@ img.embed-responsive {
     .navbar-nav {
         margin-left: 231px;
     }
-    .main-photo {
+    .intro {
         background: url("../images/xl-main-photo.png");
         height: 643px;
         padding: 237px 241px;
@@ -383,7 +393,7 @@ img.embed-responsive {
         font-size: 16px;
         letter-spacing: 1.1px;
     }
-    .main-photo > .social-sharing {
+    .intro > .social-sharing {
         margin-left: 287px;
         margin-top: 202px;
     }
@@ -454,7 +464,7 @@ img.embed-responsive {
     .navbar-nav {
         margin-left: 148px;
     }
-    .main-photo {
+    .intro {
         background: url("../images/l-main-photo.png");
         height: 544px;
         padding: 198px 200px;
@@ -471,14 +481,14 @@ img.embed-responsive {
         font-size: 16px;
         letter-spacing: 1.1px;
     }
-    .main-photo > .social-sharing {
+    .intro > .social-sharing {
         margin-left: 226px;
         margin-top: 169px;
     }
     h3 {
         margin: 60px;
     }
-    .about-h3 {
+    .about-h3-bottom {
         margin: 50px 0 70px;
     }
     .about-photo {
@@ -545,7 +555,7 @@ img.embed-responsive {
     .navbar-nav {
         margin-left: -15px;
     }
-    .main-photo {
+    .intro {
         background: url("../images/m-main-photo.png");
         height: 407px;
         padding: 122px 110px;
@@ -562,14 +572,14 @@ img.embed-responsive {
         font-size: 16px;
         letter-spacing: 1.1px;
     }
-    .main-photo > .social-sharing {
+    .intro > .social-sharing {
         margin-left: 193px;
         margin-top: 111px;
     }
     h3 {
         margin: 50px;
     }
-    .about-h3 {
+    .about-h3-bottom {
         margin: 0 0 60px;
     }
     .about-photo {
@@ -699,7 +709,7 @@ img.embed-responsive {
     .social-sharing.dark {
         display: inline;
     }
-    .main-photo {
+    .intro {
         background: url("../images/s-main-photo.png");
         height: 305px;
         padding: 80px 88px;
@@ -717,7 +727,7 @@ img.embed-responsive {
         font-size: 12px;
         letter-spacing: 0.9px;
     }
-    .main-photo > .social-sharing {
+    .intro > .social-sharing {
         display: none;
     }
     h3 {
@@ -725,7 +735,10 @@ img.embed-responsive {
         letter-spacing: 0.7px;
         margin: 40px;
     }
-    .about-h3 {
+    .about-h3-top {
+        margin-top: 86px;
+    }
+    .about-h3-bottom {
         margin: 0 0 50px;
     }
     .about-photo {
@@ -816,7 +829,7 @@ img.embed-responsive {
         top: 41px;
         right: 19px;
     }
-    .main-photo {
+    .intro {
         background: white;
         padding: 31px 0 0 0;
         margin-top: 0;
@@ -826,6 +839,9 @@ img.embed-responsive {
         top: 0;
         left: 0;
         z-index: 15;
+    }
+    .intro.about {
+        display: block;
     }
     .banner {
         background: none;
@@ -848,8 +864,10 @@ img.embed-responsive {
     h3 {
         display: none;
     }
-    .about-h3 {
-        display: block;
+    .about-h3-top {
+        margin-top: 91px;
+    }
+    .about-h3-bottom {
         margin: 0 0 50px;
     }
     .about-photo {
@@ -910,7 +928,8 @@ img.embed-responsive {
     }
     .publication > span {
         display: inline-block;
-        width: 70%;
+        font-size: 13px;
+        width: 80%;
     }
     .container > button {
         margin: 40px 0;
