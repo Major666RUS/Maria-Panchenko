@@ -878,11 +878,11 @@ img.embed-responsive {
     }
     img.embed-responsive {
         display: block;
-        position: static;
     }
     .description {
         padding: 17px 15px 20px 24px;
         height: 150px;
+        position: static;
     }
     .description > p {
         margin-bottom: 16px;
