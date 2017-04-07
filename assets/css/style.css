@@ -183,7 +183,7 @@ button:focus {
     margin-top: 40px;
 }
 
-.intro.about {
+.intro.no-photo {
     display: none;
 }
 
@@ -226,6 +226,63 @@ h4 {
     display: block;
 }
 
+form {
+    font-size: 14px;
+    color: #9b9b9b;
+    text-align: left;
+    float: left;
+}
+
+input,
+textarea {
+    font-family: "Proxima Nova Regular";
+    background: #f7f7f7;
+    border: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input {
+    height: 35px;
+    padding-left: 20px;
+}
+
+textarea {
+    height: 178px;
+    padding: 20px;
+    resize: none;
+}
+
+.feedback > button {
+    height: 35px;
+}
+
+.contacts {
+    font-size: 18px;
+    line-height: 28px;
+    color: #4a4a4a;
+    text-align: left;
+}
+
+.contacts > div:first-child {
+    margin-bottom: 20px;
+}
+
+.contacts > div > span:first-child {
+    margin-bottom: 5px;
+}
+
+.contacts  span:nth-child(odd) {
+    font-family: "Proxima Nova Semibold";
+    display: block;
+}
+
+.contacts  span:nth-child(even) {
+    font-family: "Proxima Nova Regular";
+    display: block;
+}
+
 .about-photo {
     float: right;
 }
@@ -264,7 +321,7 @@ img.embed-responsive {
     font-size: 16px;
 }
 
-.description > button {
+.button {
     font-family: "Proxima Nova Semibold";
     color: #51595b;
     font-size: 14px;
@@ -337,6 +394,7 @@ img.embed-responsive {
     background-color: #4a4a4a;
     padding: 0;
     line-height: .8px;
+    clear: both;
 }
 
 .footer > .nav {
@@ -400,6 +458,10 @@ img.embed-responsive {
     h3 {
         margin: 70px;
     }
+    form {
+        width: 445px;
+        margin: 0 125px 70px 95px;
+    }
     .about-photo {
         background: url("../images/xl-about.png");
         height: 590px;
@@ -428,7 +490,7 @@ img.embed-responsive {
     .description > p {
         margin-bottom: 86px;
     }
-    .description > button {
+    .button {
         width: 165px;
         height: 40px;
     }
@@ -491,6 +553,10 @@ img.embed-responsive {
     .about-h3-bottom {
         margin: 50px 0 70px;
     }
+    form {
+        width: 450px;
+        margin: 0 110px 60px 80px;
+    }
     .about-photo {
         background: url("../images/l-about.png");
         height: 615px;
@@ -519,7 +585,7 @@ img.embed-responsive {
     .description > p {
         margin-bottom: 46px;
     }
-    .description > button {
+    .button {
         width: 165px;
         height: 35px;
     }
@@ -581,6 +647,13 @@ img.embed-responsive {
     }
     .about-h3-bottom {
         margin: 0 0 60px;
+    }
+    form {
+        width: 390px;
+        margin: 0 30px 50px 0;
+    }
+    .contacts {
+        font-size: 14px;
     }
     .about-photo {
         background: url("../images/m-about.png");
@@ -741,6 +814,18 @@ img.embed-responsive {
     .about-h3-bottom {
         margin: 0 0 50px;
     }
+    form {
+        width: 330px;
+        font-size: 12px;
+        margin: 0 30px 40px 0;
+    }
+    .contacts {
+        font-size: 12px;
+        overflow: hidden;
+    }
+    .feedback > button {
+        height: 30px;
+    }
     .about-photo {
         background: url("../images/s-about.png");
         height: 450px;
@@ -780,10 +865,10 @@ img.embed-responsive {
         font-size: 12px;
         margin-bottom: 20px;
     }
-    .description > button {
+    .button {
         font-family: "Proxima Nova Regular";
-        font-size: 12px;
         color: #4a4a4a;
+        font-size: 12px;
         width: 130px;
         height: 30px;
     }
@@ -802,6 +887,7 @@ img.embed-responsive {
         width: 120px;
     }
     .container > button {
+        font-family: "Proxima Nova Semibold";
         font-size: 14px;
         margin: 50px 110px;
         width: 290px;
@@ -842,7 +928,7 @@ img.embed-responsive {
         left: 0;
         z-index: 15;
     }
-    .intro.about {
+    .intro.no-photo {
         display: block;
     }
     .banner {
@@ -871,6 +957,16 @@ img.embed-responsive {
     }
     .about-h3-bottom {
         margin: 0 0 50px;
+    }
+    form {
+        width: 100%;
+        margin-top: 182px;
+        margin-right: 0;
+    }
+    .contacts {
+        clear: both;
+        position: absolute;
+        top: 156px;
     }
     .about-photo {
         display: none;
