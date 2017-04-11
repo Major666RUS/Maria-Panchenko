@@ -217,6 +217,7 @@ h3 {
 h4 {
     font-family: "Proxima Nova Bold";
     font-size: 20px;
+    line-height: 1.2;
     margin-bottom: 20px;
     color: #4a4a4a;
 }
@@ -224,6 +225,45 @@ h4 {
 .about-h3-top,
 .about-h3-bottom {
     display: block;
+}
+
+.comment {
+    background-color: #f7f7f7;
+    margin: 0 auto 40px;
+}
+
+.author {
+    float: left;
+}
+
+.author > a {
+    font-family: "Proxima Nova Semibold";
+    color: #4a4a4a;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.starbox {
+    margin-bottom: 10px;
+}
+
+.description.review {
+    position: static;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+}
+
+.comment h4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.description.review > p {
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 0;
 }
 
 form {
@@ -458,6 +498,13 @@ img.embed-responsive {
     h3 {
         margin: 70px;
     }
+    .comment {
+        width: 920px;
+        padding: 33px 95px 30px 25px;
+    }
+    .author {
+        margin-right: 40px;
+    }
     form {
         width: 445px;
         margin: 0 125px 70px 95px;
@@ -484,7 +531,6 @@ img.embed-responsive {
     }
     .description {
         padding: 50px 118px 50px 60px;
-        height: 330px;
         top: 228px;
     }
     .description > p {
@@ -553,6 +599,13 @@ img.embed-responsive {
     .about-h3-bottom {
         margin: 50px 0 70px;
     }
+    .comment {
+        width: 100%;
+        padding: 33px 80px 30px 25px;
+    }
+    .author {
+        margin-right: 47px;
+    }
     form {
         width: 450px;
         margin: 0 110px 60px 80px;
@@ -579,7 +632,6 @@ img.embed-responsive {
     }
     .description {
         padding: 50px 57px 45px 50px;
-        height: 280px;
         top: 132px;
     }
     .description > p {
@@ -648,6 +700,21 @@ img.embed-responsive {
     .about-h3-bottom {
         margin: 0 0 60px;
     }
+    .comment {
+        padding: 37px 60px 30px 25px;
+    }
+    .comment h4 {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 15px;
+    }
+    .comment a {
+        font-size: 12px;
+    }
+    .description.review > p{
+        font-size: 14px;
+        line-height: 24px;
+    }
     form {
         width: 390px;
         margin: 0 30px 50px 0;
@@ -679,7 +746,6 @@ img.embed-responsive {
     }
     .description {
         padding: 30px 17px 30px 30px;
-        height: 239px;
         top: 73px;
     }
     .description > p {
@@ -814,6 +880,25 @@ img.embed-responsive {
     .about-h3-bottom {
         margin: 0 0 50px;
     }
+    .comment {
+        padding: 39px 15px 29px 20px;
+    }
+    .author {
+        margin-right: 54px;
+    }
+    .comment h4 {
+        font-family: "Proxima Nova Semibold";
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 17px;
+    }
+    .comment a {
+        font-family: "Proxima Nova Regular";
+    }
+    .description.review > p{
+        font-size: 12px;
+        line-height: 20px;
+    }
     form {
         width: 330px;
         font-size: 12px;
@@ -843,6 +928,7 @@ img.embed-responsive {
     }
     h4 {
         font-size: 12px;
+        line-height: 1.25;
         margin-bottom: 10px;
     }
     .photo1 {
@@ -858,7 +944,6 @@ img.embed-responsive {
     }
     .description {
         padding: 20px 55px 20px 25px;
-        height: 160px;
         top: 78px;
     }
     .description > p {
@@ -958,6 +1043,23 @@ img.embed-responsive {
     .about-h3-bottom {
         margin: 0 0 50px;
     }
+    .comment {
+        position: relative;
+        padding: 36px 10px 29px 10px;
+    }
+    .author {
+        margin-bottom: 15px;
+    }
+    .description.review > h4 {
+        position: absolute;
+        top: 36px;
+        left: 135px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .description.review {
+        clear: both;
+    }
     form {
         width: 100%;
         margin-top: 182px;
@@ -997,7 +1099,6 @@ img.embed-responsive {
     }
     .description {
         padding: 17px 15px 20px 24px;
-        height: 150px;
         position: static;
     }
     .description > p {
