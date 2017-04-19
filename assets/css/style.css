@@ -325,18 +325,18 @@ textarea {
     margin-bottom: 20px;
 }
 
-.contacts > div > span:first-child {
+.contacts > div > span {
     margin-bottom: 5px;
 }
 
-.contacts  span:nth-child(odd) {
+.contacts span {
     font-family: "Proxima Nova Semibold";
     display: block;
 }
 
-.contacts  span:nth-child(even) {
+.contacts a {
     font-family: "Proxima Nova Regular";
-    display: block;
+    color: #4a4a4a;
 }
 
 .about-photo {
