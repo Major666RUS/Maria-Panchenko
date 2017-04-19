@@ -26,7 +26,7 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-    outline: 1px solid blue;
+    =outline: 1px solid blue;
 }
 
 .navbar {
@@ -151,7 +151,7 @@ button:focus {
     margin: 0 15px;
 }
 
-.navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover {
     color: #ab742d;
 }
 
@@ -225,6 +225,22 @@ h4 {
 .about-h3-top,
 .about-h3-bottom {
     display: block;
+}
+
+.services > div:first-child {
+    background: #f7f7f7;
+}
+
+.services ul {
+    font-family: "Proxima Nova Regular";
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.services ul > li {
+    padding-left: 8px;
 }
 
 .comment {
@@ -430,6 +446,17 @@ img.embed-responsive {
     width: 100%;
 }
 
+.foot-note {
+    font-family: "Proxima Nova Regular";
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.foot-note p {
+    margin-bottom: 0;
+}
+
 .footer {
     background-color: #4a4a4a;
     padding: 0;
@@ -498,6 +525,17 @@ img.embed-responsive {
     h3 {
         margin: 70px;
     }
+    .services > div:first-child {
+        padding: 40px 0 30px;
+        margin-bottom: 30px;
+    }
+    .service1 > div:last-child {
+        padding-left: 32px;
+    }
+    .service2 > div:last-child,
+    .service3 > div:last-child {
+        padding-left: 47px;
+    }
     .comment {
         width: 920px;
         padding: 33px 95px 30px 25px;
@@ -560,8 +598,14 @@ img.embed-responsive {
         width: 350px;
         height: 50px;
     }
+    .foot-note {
+        margin-left: 36px;
+    }
     .footer > .social-sharing {
         margin-left: 15px;
+    }
+    .contacts + .footer {
+        margin-top: 552px;
     }
 }
 
@@ -598,6 +642,16 @@ img.embed-responsive {
     }
     .about-h3-bottom {
         margin: 50px 0 70px;
+    }
+    .services img {
+        height: 125px;
+    }
+    .services > div:first-child {
+        padding: 48px 0 47px;
+        margin-bottom: 30px;
+    }
+    .services > div:last-child {
+        padding-left: 9px;
     }
     .comment {
         width: 100%;
@@ -661,8 +715,14 @@ img.embed-responsive {
         width: 350px;
         height: 50px;
     }
+    .foot-note {
+        margin-left: 11px;
+    }
     .footer > .social-sharing {
         margin-left: 45px;
+    }
+    .contacts + .footer {
+        margin-top: 572px;
     }
 }
 
@@ -699,6 +759,23 @@ img.embed-responsive {
     }
     .about-h3-bottom {
         margin: 0 0 60px;
+    }
+    .services img {
+        height: 120px;
+    }
+    .services > div:first-child {
+        padding: 45px 0;
+        margin-bottom: 20px;
+    }
+    .services > div:last-child {
+        padding-left: 11px;
+    }
+    .services h4,
+    .services div:last-child ul {
+        font-size: 14px;
+    }
+    .services div:last-child ul {
+        line-height: 25px;
     }
     .comment {
         padding: 37px 60px 30px 25px;
@@ -762,6 +839,12 @@ img.embed-responsive {
     }
     .container > button {
         margin: 60px 170px;
+    }
+    .foot-note {
+        margin-bottom: 15px;
+    }
+    .contacts + .footer {
+        margin-top: 592px;
     }
 }
 
@@ -880,6 +963,29 @@ img.embed-responsive {
     .about-h3-bottom {
         margin: 0 0 50px;
     }
+    .services > div {
+        margin-bottom: 30px;
+    }
+    .services > div:last-child {
+        padding-left: 10px;
+    }
+    .services > div:last-child ul {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .services > div:first-child,
+    .services > div:last-child {
+        display: inline-block;
+        float: left;
+        width: 240px;
+    }
+    .services > div:first-child {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+    .service3 > div {
+        margin-bottom: 0;
+    }
     .comment {
         padding: 39px 15px 29px 20px;
     }
@@ -978,6 +1084,12 @@ img.embed-responsive {
         width: 290px;
         height: 39px;
     }
+    .foot-note {
+        font-size: 10px;
+        line-height: 14px;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
     .footer {
         display: none;
     }
@@ -1042,6 +1154,22 @@ img.embed-responsive {
     }
     .about-h3-bottom {
         margin: 0 0 50px;
+    }
+    .services > div:last-child {
+        padding-left: 10px;
+    }
+    .services > div:first-child,
+    .services > div:last-child {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    .services > div:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .service3 > div {
+        margin-bottom: 0;
     }
     .comment {
         position: relative;
