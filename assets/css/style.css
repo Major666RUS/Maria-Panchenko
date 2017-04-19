@@ -334,7 +334,7 @@ textarea {
     display: block;
 }
 
-.contacts a {
+.contacts > div > a {
     font-family: "Proxima Nova Regular";
     color: #4a4a4a;
 }
