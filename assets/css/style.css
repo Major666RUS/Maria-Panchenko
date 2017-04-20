@@ -458,16 +458,24 @@ img.embed-responsive {
 }
 
 .footer {
+    font-family: Gotham Pro Medium;
+    font-size: 12px;
     background-color: #4a4a4a;
     padding: 0;
     line-height: .8px;
-    clear: both;
+    width: 100%;
+    =clear: both;
 }
 
 .footer > .nav {
     padding: 0;
     margin-top: 27px;
     margin-bottom: 21px;
+}
+
+.row.footer {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .footer > .social-sharing {
@@ -604,8 +612,8 @@ img.embed-responsive {
     .footer > .social-sharing {
         margin-left: 15px;
     }
-    .contacts + .footer {
-        margin-top: 552px;
+    .contacts-footer {
+        margin-top: 281px;
     }
 }
 
@@ -721,8 +729,8 @@ img.embed-responsive {
     .footer > .social-sharing {
         margin-left: 45px;
     }
-    .contacts + .footer {
-        margin-top: 572px;
+    .contacts-footer {
+        margin-top: 311px;
     }
 }
 
@@ -843,8 +851,8 @@ img.embed-responsive {
     .foot-note {
         margin-bottom: 15px;
     }
-    .contacts + .footer {
-        margin-top: 592px;
+    .contacts-footer {
+        margin-top: 341px;
     }
 }
 
