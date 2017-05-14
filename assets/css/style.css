@@ -42,6 +42,7 @@ button {
 .button:focus {
     text-decoration: none;
     outline: none;
+    color: #51595b;
 }
 
 .burger-line {
