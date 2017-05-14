@@ -38,7 +38,9 @@ button {
     cursor: pointer;
 }
 
-button:focus {
+.button:visited,
+.button:focus {
+    text-decoration: none;
     outline: none;
 }
 
@@ -310,8 +312,9 @@ textarea {
     resize: none;
 }
 
-.feedback > button {
+.feedback > .button {
     height: 35px;
+    line-height: 29px;
 }
 
 .contacts {
@@ -379,13 +382,19 @@ img.embed-responsive {
 
 .button {
     font-family: "Proxima Nova Semibold";
+    display: inline-block;
+    text-align: center;
     color: #51595b;
     font-size: 14px;
-    line-height: 1em;
+    line-height: 36px;
     background: none;
     border: 2px solid #4a4a4a;
     width: 165px;
     height: 40px;
+}
+
+.button:hover {
+    text-decoration: none;
 }
 
 .publication {
@@ -398,10 +407,9 @@ img.embed-responsive {
     line-height: 22px;
 }
 
-.container > button {
+.container > .button {
     font-family: "Proxima Nova Semibold";
     font-size: 16px;
-    line-height: 1em;
     color: #4a4a4a;
     letter-spacing: 0.13px;
     text-transform: uppercase;
@@ -601,10 +609,11 @@ img.embed-responsive {
     .publication4 {
         margin-right: 0;
     }
-    .container > button {
+    .container > .button {
         margin: 70px 380px;
         width: 350px;
         height: 50px;
+        line-height: 46px;
     }
     .foot-note {
         margin-left: 36px;
@@ -702,6 +711,7 @@ img.embed-responsive {
     .button {
         width: 165px;
         height: 35px;
+        line-height: 31px;
     }
     .office2 {
         margin-bottom: 30px;
@@ -718,10 +728,11 @@ img.embed-responsive {
     .publication4 {
         margin-right: 0;
     }
-    .container > button {
+    .container > .button {
         margin: 70px 290px;
         width: 350px;
         height: 50px;
+        line-height: 46px;
     }
     .foot-note {
         margin-left: 11px;
@@ -845,7 +856,7 @@ img.embed-responsive {
     .publication4 {
         display: none;
     }
-    .container > button {
+    .container > .button {
         margin: 60px 170px;
     }
     .foot-note {
@@ -1022,8 +1033,9 @@ img.embed-responsive {
         font-size: 12px;
         overflow: hidden;
     }
-    .feedback > button {
+    .feedback > .button {
         height: 30px;
+        line-height: 26px;
     }
     .about-photo {
         background: url("../images/s-about.png");
@@ -1070,6 +1082,7 @@ img.embed-responsive {
         font-size: 12px;
         width: 130px;
         height: 30px;
+        line-height: 26px;
     }
     .office2 {
         margin-bottom: 30px;
@@ -1085,12 +1098,13 @@ img.embed-responsive {
         display: inline-block;
         width: 120px;
     }
-    .container > button {
+    .container > .button {
         font-family: "Proxima Nova Semibold";
         font-size: 14px;
         margin: 50px 110px;
         width: 290px;
         height: 39px;
+        line-height: 35px;
     }
     .foot-note {
         font-size: 10px;
@@ -1266,7 +1280,7 @@ img.embed-responsive {
         font-size: 13px;
         width: 80%;
     }
-    .container > button {
+    .container > .button {
         margin: 40px 0;
     }
 }
