@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- My styles -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+
 </head>
 <body>
 
@@ -27,10 +29,10 @@
 
         <div class="menu">
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">Главная</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="projects.html">Проекты</a>
                 </li>
                 <li class="nav-item">
@@ -71,31 +73,16 @@
         </div>
     </div>
 
-    <h3>проекты</h3>
+    <h3>Загородный дом</h3>
 
-    <div class="office office1">
-        <div class="photo1 col-12 col-sm-8 col-md-7 col-lg-8"></div>
-        <img class="embed-responsive" src="assets/images/xl-photo-1.png" alt="">
-        <div class="col-12 col-sm-8 col-md-7 col-lg-6 description text-left">
-            <h4>Офис московской компании "Cauri"</h4>
-            <p>Двухкомнатная квартира для молодой пары в
-                смешанном стиле с преобладанием скандинавских элементов</p>
-            <a href="#" class="button">больше деталей</a>
-        </div>
-    </div>
+    <ul class="bxslider">
+        <li><img src="assets/images/country_house/kitchen/10000.jpg" height="355px" /></li>
+        <li><img src="assets/images/country_house/kitchen/30000.jpg" height="355px" /></li>
+        <li><img src="assets/images/country_house/kitchen/40000.jpg" height="355px" /></li>
+        <li><img src="assets/images/country_house/kitchen/50000.jpg" height="355px" /></li>
+    </ul>
 
-    <div class="office office2">
-        <div class="photo2 col-12 col-sm-8 col-md-7 col-lg-8"></div>
-        <img class="embed-responsive" src="assets/images/xl-photo-2.png" alt="">
-        <div class="col-12 col-sm-8 col-md-7 col-lg-6 description text-left">
-            <h4>Офис московской компании "Cauri"</h4>
-            <p>Двухкомнатная квартира для молодой пары в
-                смешанном стиле с преобладанием скандинавских элементов</p>
-            <a href="#" class="button">больше деталей</a>
-        </div>
-    </div>
-
-    <a href="project_country_house.html" class="button">Смотреть больше проектов</a>
+    <a href="#" class="button">Заказать дизайн-проект</a>
 </div>
 
 <div class="row footer justify-content-center">
@@ -130,8 +117,10 @@
     </div>
 </div>
 
-<!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<!-- jQuery library (served from Google) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="assets/js/jquery.bxslider.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script>
@@ -139,6 +128,10 @@
         $(this).toggleClass('open');
         $('.container').toggleClass('open');
         $('.menu').toggleClass('open');
+    });
+
+    $(document).ready(function(){
+        $('.bxslider').bxSlider();
     });
 </script>
 </body>
